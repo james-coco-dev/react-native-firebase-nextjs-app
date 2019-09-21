@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "gratitude-62e2b",
+    "staging": "gratitude-staging"
+  }
+}

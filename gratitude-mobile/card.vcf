@@ -1,0 +1,6 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Test;User;;;
+FN:Test User
+TEL;type=HOME:1-(424)242-4242
+END:VCARD

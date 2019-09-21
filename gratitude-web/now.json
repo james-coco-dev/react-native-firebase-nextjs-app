@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "public": true,
+  "build": {
+    "env": {
+      "API_KEY": "AIzaSyDPZFiqjI6_-inqYrrZYM5GDzVZy3IcjqQ",
+      "AUTH_DOMAIN": "gratitude-62e2b.firebaseapp.com",
+      "DATABASE_URL": "https://gratitude-62e2b.firebaseio.com",
+      "PROJECT_ID": "gratitude-62e2b",
+      "STORAGE_BUCKET": "gratitude-62e2b.appspot.com",
+      "MESSAGING_SENDER_ID": "526207037665",
+      "SERVER_ENV": "production"
+    }
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/next@canary",
+      "config": { "maxLambdaSize": "10mb" }
+    }
+  ],
+  "alias": "givegratitude.co",
+  "routes": [{ "src": "/@(.*)", "dest": "/profile?username=$1" }]
+}

@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "public": true,
+  "build": {
+    "env": {
+      "API_KEY": "AIzaSyDOrMhN4ue1IRPBR0y1h1Yu0WoM9nMq4YQ",
+      "AUTH_DOMAIN": "gratitude-staging.firebaseapp.com",
+      "DATABASE_URL": "https://gratitude-staging.firebaseio.com",
+      "PROJECT_ID": "gratitude-staging",
+      "STORAGE_BUCKET": "gratitude-staging.appspot.com",
+      "MESSAGING_SENDER_ID": "691017288064",
+      "SERVER_ENV": "staging"
+    }
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/next@canary",
+      "config": { "maxLambdaSize": "10mb" }
+    }
+  ],
+  "alias": "gratitude-web.gratitude.now.sh",
+  "routes": [{ "src": "/@(.*)", "dest": "/profile?username=$1" }]
+}

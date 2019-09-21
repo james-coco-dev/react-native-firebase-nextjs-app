@@ -1,0 +1,253 @@
+/*
+/*
+/*  custom.css
+/*
+/*  If not using Gulp and Sass, add your custom CSS below then include it
+/*  in your page by adding a reference to assets/css/custom.css in the head of each page.
+/*
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  color: #23535D;
+  font-family: Hero New, "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.hideThis {
+  display: none;
+}
+
+.avatar {
+  border: 3px solid #efefef;
+}
+
+.avatar.avatar-xl {
+  width: 7rem;
+  height: 7rem;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: #9C645A;
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.navbar-brand img {
+  max-height:24px;
+}
+
+.dreamSidebar .btn {
+  width: 100%;
+}
+
+.contributorBox {
+  padding: 2rem;
+}
+
+.contributorBox .card {
+  padding: 1rem;
+}
+
+.badge-primary-outline {
+  background: #FFF;
+  border: 1px solid #dee2e6 !important;
+  color: #0F66DC;
+  margin: 0.25rem !important;
+  margin-left: 0px !important;
+}
+
+.bg-primary-alt {
+  background: #DBECE5;
+}
+
+.card h5 {
+  line-height: 1.6rem;
+}
+
+.contributionMethod {
+  display: block;
+}
+
+.contributeCard .contributionMethod {
+  display: block;
+}
+
+.contributionMethod .card {
+  margin-bottom: .6rem;
+}
+
+.contributionMethod .card.activeState {
+  background: #ffd9c2;
+  border: 2px solid #ff7b04;
+}
+
+.contributeCard .input-group-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.methodsGroup {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  padding-left: 24px;
+}
+
+.input-money.form-control:focus {
+  border-color: #dee2e6;
+  box-shadow: none;
+}
+
+.input-money {
+  padding-right: 0.15rem;
+  text-align: right;
+}
+
+.contributionMethod .card.card-sm.card-body {
+  padding: 1rem;
+  margin-right: 0rem;
+}
+
+.deleteText {
+  color: #dc3545 !important;
+}
+
+.contribution-list .icon, .contribution-list .contributionTitle {
+  display: inline-block;
+  margin: 0rem 0.25rem;
+}
+
+.highlight {
+  background: rgba(179, 220, 203, 0.65);
+  border-radius: 0.3125rem;
+  padding: .5rem .25rem .5rem .5rem;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.dream-parallax img {
+  max-height:400px;
+}
+
+.headerDreamType {
+  min-height: 120px;
+  /* border-radius: 8px;
+  background-color: rgb(255, 215, 210);
+  padding: 15px;
+  box-shadow: 2px 8px 24px 0px #3838381c;
+  overflow: visible;
+  transform: skew(15deg, -5deg); */
+}
+
+.headerDreamType .h2 {
+  vertical-align: top;
+  line-height:3.5rem;
+}
+
+.typed-cursor {
+  font-size:2rem;
+}
+
+.greenStripe {
+  background-color: #22535d;
+  height: 100vh;
+  width: 200px;
+  transform: skew(-15deg, 15deg);
+  position: absolute;
+  right: 110px;
+}
+
+.flickity-viewport {
+  overflow: visible;
+}
+
+.btn {
+  font-family: Hero New, "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+  padding: 1.25rem 2.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.3125rem;
+}
+
+/* STRIPE ELEMENTS */
+.StripeElement {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    max-height:20px;
+  }
+  .headerDreamType {
+    min-height:100px;
+    margin-top:1rem;
+  }
+
+  .headerDreamType .h2 {
+    font-size:1.4rem;
+    vertical-align: top;
+    line-height:2.5rem;
+  }
+  .typed-cursor {
+    font-size:1.4rem;
+  }
+
+  h1, .h1 {
+    font-size:2rem;
+  }
+
+  .lead {
+    line-height:1.5;
+  }
+
+  h5 {
+    line-height:1.5;
+  }
+}

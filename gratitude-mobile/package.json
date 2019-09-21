@@ -1,0 +1,47 @@
+{
+  "name": "Gratitude",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios --simulator=\"iPhone X\"",
+    "dev": "npm run ios",
+    "apk": "cd android && ./gradlew assembleRelease",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@corcos/components": "latest",
+    "@corcos/lib": "latest",
+    "appcenter": "1.12.0",
+    "appcenter-analytics": "1.12.0",
+    "appcenter-crashes": "1.12.0",
+    "firebase": "^5.8.2",
+    "fuse.js": "^3.4.2",
+    "google-libphonenumber": "^3.2.2",
+    "react": "16.6.3",
+    "react-native": "0.58.3",
+    "react-native-contacts": "^3.1.2",
+    "react-native-gesture-handler": "^1.0.15",
+    "react-native-plaid-link": "^1.3.7",
+    "react-native-snap-carousel": "^3.7.5",
+    "react-native-splash-screen": "^3.2.0",
+    "react-navigation": "^3.1.2",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "24.0.0",
+    "jest": "24.0.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3",
+    "standard": "^12.0.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}

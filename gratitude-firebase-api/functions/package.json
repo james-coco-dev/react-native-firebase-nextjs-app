@@ -1,0 +1,50 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "NODE_ENV=development firebase serve --only functions",
+    "dev": "npm run serve",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "node ./scripts/deploy",
+    "deploy:staging": "node ./scripts/deploy-staging",
+    "logs": "firebase functions:log",
+    "fix": "node_modules/.bin/standard --fix"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "algoliasearch": "^3.32.1",
+    "apac": "^3.0.2",
+    "apple-pay-decrypt": "^1.0.7",
+    "authy": "^1.4.0",
+    "base64url": "^3.0.1",
+    "chalk": "^2.4.2",
+    "cors": "^2.8.5",
+    "dwolla-v2": "^2.0.0",
+    "ec-key": "0.0.2",
+    "firebase-admin": "^7.3.0",
+    "firebase-functions": "^2.3.0",
+    "firestore-adapter": "^1.0.5",
+    "firestore-rest": "^1.2.1",
+    "google-libphonenumber": "^3.2.2",
+    "googleapis": "^39.2.0",
+    "node-fetch": "^2.3.0",
+    "node-forge": "^0.8.0",
+    "plaid": "^2.10.0",
+    "stripe": "^6.29.0",
+    "twilio": "^3.27.1",
+    "x509": "^0.3.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "shelljs": "^0.8.3",
+    "standard": "^12.0.1"
+  },
+  "private": true,
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "engines": {
+    "node": "8"
+  }
+}

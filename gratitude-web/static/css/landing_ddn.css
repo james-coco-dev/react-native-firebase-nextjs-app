@@ -1,0 +1,64 @@
+/*
+/*
+/*  landing_ddn.css
+/*
+/*  If not using Gulp and Sass, add your custom CSS below then include it
+/*  in your page by adding a reference to assets/css/custom.css in the head of each page.
+/*
+*/
+
+#head {
+  background-color: #423072;
+}
+
+#head .h2 {
+  color: white;
+}
+
+/* #how {
+  background-color: #ffede8;
+} */
+
+.highlight {
+    background: rgba(226, 88, 152, 0.65);
+}
+
+.welcomeText {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    color: #e25898 !important;
+}
+
+#head .lead {
+  color: white;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #e25898;
+    border-color: #e25898;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ef70ab;
+    border-color: #ef70ab;
+}
+
+.bg-primary-alt {
+  background: #d8cff1;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #423072;
+}
+
+svg.bg-primary * {
+    fill: #423072;
+}
+
+
+@media (max-width: 480px) {
+
+}
