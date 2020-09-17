@@ -29,7 +29,7 @@
     "google-libphonenumber": "^3.2.2",
     "googleapis": "^39.2.0",
     "node-fetch": "^2.3.0",
-    "node-forge": "^0.8.0",
+    "node-forge": "^0.10.0",
     "plaid": "^2.10.0",
     "stripe": "^6.29.0",
     "twilio": "^3.27.1",
